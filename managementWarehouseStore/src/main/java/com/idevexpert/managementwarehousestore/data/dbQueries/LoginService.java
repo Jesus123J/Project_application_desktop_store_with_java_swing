@@ -20,7 +20,7 @@ public class LoginService{
     }
     
     public Integer incomeServiceLogIn(){
-        
+        //Consultas
         return 1;
     }
 }

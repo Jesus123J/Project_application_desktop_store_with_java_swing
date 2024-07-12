@@ -18,6 +18,7 @@ import javax.swing.event.DocumentListener;
 public class ControllerLogin extends ModelLogin implements ActionListener, DocumentListener {
 
     public ControllerLogin() {
+        
         if (connectionDb.connectionDb() == null) {
             System.out.println("I entered the login view");
             jpanelCentralLogin.jButton1.addActionListener(this);

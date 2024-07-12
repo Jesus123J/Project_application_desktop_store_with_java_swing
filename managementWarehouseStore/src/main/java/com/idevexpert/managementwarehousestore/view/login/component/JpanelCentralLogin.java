@@ -50,8 +50,6 @@ public class JpanelCentralLogin extends javax.swing.JPanel {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/CapturaUser.PNG"))); // NOI18N
 
-        jPasswordField1.setBackground(new java.awt.Color(255, 255, 255));
-        jPasswordField1.setForeground(new java.awt.Color(0, 0, 0));
         jPasswordField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -61,7 +59,7 @@ public class JpanelCentralLogin extends javax.swing.JPanel {
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("INICIAR SESIÓN");
 
-        jtextfieldUtil1.setBackground(new java.awt.Color(255, 255, 255));
+        jtextfieldUtil1.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jpanelBodyRigth1Layout = new javax.swing.GroupLayout(jpanelBodyRigth1);
         jpanelBodyRigth1.setLayout(jpanelBodyRigth1Layout);

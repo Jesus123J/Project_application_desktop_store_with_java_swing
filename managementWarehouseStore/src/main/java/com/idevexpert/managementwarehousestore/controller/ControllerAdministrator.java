@@ -19,7 +19,8 @@ import javax.swing.JOptionPane;
  * @author Jesus Gutierrez
  */
 public class ControllerAdministrator extends ModelAdministrator implements ActionListener {
-
+    
+    
     public ControllerAdministrator(JframeLogin jframeLogin , JpanelDarkUtil jpanelDarkUtil) {
         this.jpanelDarkUtil = jpanelDarkUtil;
         this.jframeLogin = jframeLogin;
