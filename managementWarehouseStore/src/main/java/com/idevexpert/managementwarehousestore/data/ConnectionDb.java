@@ -17,8 +17,9 @@ public class ConnectionDb {
     private static final String USER = "root";
     private static final String PASSWORD = "";
 
-    public Connection connectionDb() {
-        try(Connection connection = DriverManager.getConnection(URL,USER,PASSWORD)){
+    public static Connection connectionDb() {
+        try {
+            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
             System.out.println("Se logro conectar con la base de datos");
             return connection;
         } catch (Exception e) {

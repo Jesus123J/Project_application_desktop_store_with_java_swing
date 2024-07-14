@@ -6,7 +6,7 @@ package com.idevexpert.managementwarehousestore.model;
 
 import com.idevexpert.managementwarehousestore.controller.ControllerAdministrator;
 import com.idevexpert.managementwarehousestore.data.ConnectionDb;
-import com.idevexpert.managementwarehousestore.data.dbQueries.LoginService;
+//import com.idevexpert.managementwarehousestore.data.dbQueries.LoginService;
 import com.idevexpert.managementwarehousestore.utils.JpanelDarkUtil;
 import com.idevexpert.managementwarehousestore.view.administrator.JpanelJdesktopBody;
 import com.idevexpert.managementwarehousestore.view.login.JframeLogin;
@@ -27,7 +27,7 @@ public class ModelLogin {
     protected JpanelCentralLogin jpanelCentralLogin = new JpanelCentralLogin();
     protected JframeLogin jframeLogin = new JframeLogin();
     protected JpanelDarkUtil jpanelDarkUtil = new JpanelDarkUtil();
-    private LoginService loginService = new LoginService(connectionDb.connectionDb());
+    //private LoginService loginService = new LoginService(connectionDb.connectionDb());
     private ControllerAdministrator controllerAdministrator;
     private final MigLayout layout = new MigLayout("fill, insets 0");
 
@@ -44,14 +44,14 @@ public class ModelLogin {
     }
 
     public void awaitComponentEnter() {
-        if (loginService.incomeServiceLogIn() == 1) {
-            jframeLogin.setEnabled(false);
-            jpanelDarkUtil.setVisible(false);
-            System.out.println("I entered the coordiantor view");
-            controllerAdministrator = new ControllerAdministrator(jframeLogin ,  jpanelDarkUtil);
-        } else {   
-            jpanelCentralLogin.jLabel4.setText("Datos incorrectos inténtalo de nuevo");
-        }
+//        if (loginService.incomeServiceLogIn() == 1) {
+//            jframeLogin.setEnabled(false);
+//            jpanelDarkUtil.setVisible(false);
+//            System.out.println("I entered the coordiantor view");
+//            controllerAdministrator = new ControllerAdministrator(jframeLogin ,  jpanelDarkUtil);
+//        } else {   
+//            jpanelCentralLogin.jLabel4.setText("Datos incorrectos inténtalo de nuevo");
+//        }
 
     }
 
