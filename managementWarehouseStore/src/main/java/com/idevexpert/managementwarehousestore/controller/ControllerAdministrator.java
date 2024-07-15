@@ -62,6 +62,7 @@ public class ControllerAdministrator extends ModelAdministrator implements Actio
         jframeLogin.jMenu5.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
+                
                 updateComponent(jinternalJframeBill);
             }
         });

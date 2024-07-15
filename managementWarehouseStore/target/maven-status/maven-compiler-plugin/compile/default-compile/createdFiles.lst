@@ -14,6 +14,7 @@ com\idevexpert\managementwarehousestore\data\dao\PersonDaoImpl.class
 com\idevexpert\managementwarehousestore\data\dto\FacturaDto.class
 com\idevexpert\managementwarehousestore\data\dao\daoImpl\ProductDao.class
 Thiago\datetime\component\date\PanelMonth.class
+com\idevexpert\managementwarehousestore\model\ModelReport.class
 Thiago\datetime\component\time\Header$EventHeaderChanged.class
 com\idevexpert\managementwarehousestore\model\ModelAdministrator.class
 com\idevexpert\managementwarehousestore\view\administrator\JinternalJframeProduct.class
@@ -52,6 +53,7 @@ Thiago\datetime\component\date\SingleDate.class
 com\idevexpert\managementwarehousestore\data\dto\CategoriaDto.class
 Thiago\datetime\component\date\PanelYear$EventYearChanged.class
 Thiago\datetime\component\date\DatePicker$4.class
+com\idevexpert\managementwarehousestore\model\ModelBill.class
 com\idevexpert\managementwarehousestore\view\administrator\JinternalJframeUser.class
 com\idevexpert\managementwarehousestore\data\dto\UserDto.class
 Thiago\datetime\component\date\PanelDate.class

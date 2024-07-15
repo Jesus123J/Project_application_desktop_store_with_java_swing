@@ -4,6 +4,8 @@
  */
 package com.idevexpert.managementwarehousestore.view.administrator;
 
+import javax.swing.ListSelectionModel;
+
 /**
  *
  * @author Jesus Gutierrez
@@ -14,9 +16,11 @@ public class JinternalJframeCategory extends javax.swing.JInternalFrame {
      * Creates new form JinternalJframeCategory
      */
     public JinternalJframeCategory() {
-         super("Vista de Categorias", true, true,true,true);
-       
+        super("Vista de Categorias", true, true, true, true);
+
         initComponents();
+        jTable1.getTableHeader().setReorderingAllowed(false);
+        jTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
     }
 
     /**
@@ -48,6 +52,7 @@ public class JinternalJframeCategory extends javax.swing.JInternalFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        jTable1.setFont(new java.awt.Font("sansserif", 1, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
