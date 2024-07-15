@@ -2,6 +2,7 @@ Thiago\datetime\component\date\DateSelectionAble.class
 Thiago\swing\slider\PanelSlider.class
 com\idevexpert\managementwarehousestore\view\administrator\componentJdialog\JdialogClient$2.class
 Thiago\datetime\component\date\DatePicker$1.class
+com\idevexpert\managementwarehousestore\data\dao\CategoriaDaoImpl.class
 Thiago\datetime\component\date\ButtonMonthYear.class
 Thiago\datetime\component\date\PanelDateOption.class
 com\idevexpert\managementwarehousestore\view\login\component\JpanelBodyLeft.class
@@ -25,6 +26,7 @@ Thiago\datetime\component\date\DatePicker$3.class
 com\idevexpert\managementwarehousestore\data\dao\ClientDaoImpl.class
 com\idevexpert\managementwarehousestore\data\dao\UserDaoImpl.class
 com\idevexpert\managementwarehousestore\view\administrator\componentJdialog\JdialogClient.class
+com\idevexpert\managementwarehousestore\view\administrator\JinternalJframeProduct$1.class
 com\idevexpert\managementwarehousestore\controller\ControllerAdministrator$2.class
 com\idevexpert\managementwarehousestore\data\dao\daoImpl\ClientDao.class
 Thiago\datetime\component\time\PanelClock.class
@@ -43,6 +45,7 @@ Thiago\datetime\util\InputUtils$OldEditorProperty.class
 com\idevexpert\managementwarehousestore\controller\ControllerAdministrator$3.class
 Thiago\swing\slider\SliderTransition.class
 Thiago\swing\slider\SimpleTransition$4.class
+com\idevexpert\managementwarehousestore\data\dao\daoImpl\CategoriaDao.class
 Thiago\swing\slider\PanelSlider$PanelSnapshot.class
 Thiago\swing\slider\SimpleTransition.class
 Thiago\datetime\component\date\SingleDate.class
@@ -71,6 +74,7 @@ Thiago\datetime\component\time\TimeSelectionListener.class
 Thiago\datetime\util\Utils.class
 com\idevexpert\managementwarehousestore\controller\ControllerProduct.class
 Thiago\datetime\component\date\DatePicker$2.class
+com\idevexpert\managementwarehousestore\view\administrator\JinternalJframeClient$1.class
 com\idevexpert\managementwarehousestore\view\login\component\JpanelCentralLogin.class
 com\idevexpert\managementwarehousestore\view\administrator\JinternalJframeUser$1.class
 Thiago\datetime\component\time\AnimationChange.class
@@ -88,6 +92,8 @@ com\idevexpert\managementwarehousestore\data\dao\ProductDaoImpl.class
 Thiago\swing\slider\SimpleTransition$2.class
 com\idevexpert\managementwarehousestore\view\administrator\componentJdialog\JdialogUser.class
 Thiago\datetime\component\time\TimePicker$3.class
+com\idevexpert\managementwarehousestore\utils\DoubleOnlyDocumentFilter.class
+com\idevexpert\managementwarehousestore\model\ModelClient.class
 com\idevexpert\managementwarehousestore\controller\ControllerAdministrator.class
 Thiago\datetime\component\date\PanelMonth$EventMonthChanged.class
 com\idevexpert\managementwarehousestore\data\dao\FacturaDaoImpl.class
@@ -101,10 +107,12 @@ Thiago\datetime\component\date\DateEvent.class
 Thiago\datetime\component\time\TimePicker$2.class
 com\idevexpert\managementwarehousestore\data\ConnectionDb.class
 Thiago\datetime\component\time\TimePicker$1.class
+com\idevexpert\managementwarehousestore\model\ModelProduct.class
 com\idevexpert\managementwarehousestore\controller\ControllerHistory.class
 Thiago\datetime\component\date\ButtonDate$1.class
 Thiago\datetime\component\time\TimePicker.class
 com\idevexpert\managementwarehousestore\controller\ControllerLogin.class
+com\idevexpert\managementwarehousestore\model\ModelCategory.class
 com\idevexpert\managementwarehousestore\controller\ControllerFactura.class
 Thiago\swing\slider\SimpleTransition$1.class
 Thiago\swing\slider\PanelSlider$PanelSnapshot$1.class

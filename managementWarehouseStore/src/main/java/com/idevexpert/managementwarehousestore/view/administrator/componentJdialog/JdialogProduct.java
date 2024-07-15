@@ -4,7 +4,10 @@
  */
 package com.idevexpert.managementwarehousestore.view.administrator.componentJdialog;
 
+import com.idevexpert.managementwarehousestore.utils.DoubleOnlyDocumentFilter;
+import com.idevexpert.managementwarehousestore.utils.NumberOnlyDocumentFilter;
 import java.awt.Color;
+import javax.swing.text.AbstractDocument;
 
 /**
  *
@@ -18,7 +21,9 @@ public class JdialogProduct extends javax.swing.JDialog {
     public JdialogProduct(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-         jButton4.setBackground(new Color(18, 78, 91));
+        jButton4.setBackground(new Color(18, 78, 91));
+        ((AbstractDocument) jtextfieldUtil10.getDocument()).setDocumentFilter(new NumberOnlyDocumentFilter());
+        ((AbstractDocument) jtextfieldUtil11.getDocument()).setDocumentFilter(new DoubleOnlyDocumentFilter());
     }
 
     /**
@@ -72,7 +77,7 @@ public class JdialogProduct extends javax.swing.JDialog {
         jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel19.setText("Nuevo Producto");
+        jLabel19.setText("Producto ");
 
         jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
@@ -181,8 +186,8 @@ public class JdialogProduct extends javax.swing.JDialog {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton4;
-    private javax.swing.JComboBox<String> jComboBox1;
+    public javax.swing.JButton jButton4;
+    public javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -190,9 +195,9 @@ public class JdialogProduct extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JPanel jPanel4;
-    private com.idevexpert.managementwarehousestore.utils.JtextfieldUtil jtextfieldUtil10;
-    private com.idevexpert.managementwarehousestore.utils.JtextfieldUtil jtextfieldUtil11;
-    private com.idevexpert.managementwarehousestore.utils.JtextfieldUtil jtextfieldUtil12;
-    private com.idevexpert.managementwarehousestore.utils.JtextfieldUtil jtextfieldUtil13;
+    public com.idevexpert.managementwarehousestore.utils.JtextfieldUtil jtextfieldUtil10;
+    public com.idevexpert.managementwarehousestore.utils.JtextfieldUtil jtextfieldUtil11;
+    public com.idevexpert.managementwarehousestore.utils.JtextfieldUtil jtextfieldUtil12;
+    public com.idevexpert.managementwarehousestore.utils.JtextfieldUtil jtextfieldUtil13;
     // End of variables declaration//GEN-END:variables
 }

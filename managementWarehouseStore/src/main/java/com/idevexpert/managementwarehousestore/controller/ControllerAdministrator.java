@@ -41,19 +41,22 @@ public class ControllerAdministrator extends ModelAdministrator implements Actio
         jframeLogin.jMenu2.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                updateComponent(jinternalJframeProduct);
+                ControllerProduct controllerProduct = new ControllerProduct(jinternalJframeProduct,jdialogProduct);
+                updateComponent(controllerProduct.getJinternalJframeProduct());
             }
         });
         jframeLogin.jMenu3.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                updateComponent(jinternalJframeClient);
+                ControllerClient controllerClient  = new ControllerClient(jinternalJframeClient , jdialogClient);
+                updateComponent(controllerClient.getJinternalJframeClient());
             }
         });
         jframeLogin.jMenu4.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                updateComponent(jinternalJframeCategory);
+                ControllerCategory controllerCategory = new ControllerCategory(jinternalJframeCategory , jdialogCategory);
+                updateComponent(controllerCategory.getJinternalJframeCategoria());
             }
         });
         jframeLogin.jMenu5.addMouseListener(new MouseAdapter() {

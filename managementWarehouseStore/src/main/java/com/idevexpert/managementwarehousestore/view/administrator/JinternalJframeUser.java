@@ -30,7 +30,7 @@ public class JinternalJframeUser extends javax.swing.JInternalFrame {
         initComponents();
 
         jTable1.getTableHeader().setReorderingAllowed(false);
-       jTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        jTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         //jTable1.getTableHeader().setResizingAllowed(false);
     }
 
