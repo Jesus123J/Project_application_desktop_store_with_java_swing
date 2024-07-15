@@ -4,6 +4,8 @@
  */
 package com.idevexpert.managementwarehousestore.view.administrator;
 
+import javax.swing.ListSelectionModel;
+
 /**
  *
  * @author Jesus Gutierrez
@@ -14,9 +16,10 @@ public class JinternalJframeProduct extends javax.swing.JInternalFrame {
      * Creates new form JinternalJFrame
      */
     public JinternalJframeProduct() {
-         super("Vista de Productos", true, true,true,true);
-       
+        super("Vista de Productos", true, true, true, true);
         initComponents();
+        jTable1.getTableHeader().setReorderingAllowed(false);
+        jTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
     }
 
     /**

@@ -11,5 +11,5 @@ import java.sql.Connection;
  * @author Jesus Gutierrez
  */
 public interface ConnectionDataBase {
-    Connection connectionDb = ConnectionDb.connectionDb();
+    Connection connection = ConnectionDb.connectionDb();
 }

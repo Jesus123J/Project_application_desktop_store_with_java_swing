@@ -4,6 +4,7 @@
  */
 package com.idevexpert.managementwarehousestore.controller;
 
+import com.idevexpert.managementwarehousestore.data.ConnectionDb;
 import com.idevexpert.managementwarehousestore.model.ModelLogin;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -19,9 +20,8 @@ public class ControllerLogin extends ModelLogin implements ActionListener, Docum
 
     public ControllerLogin() {
         
-        if (connectionDb.connectionDb() == null) {
+        if (ConnectionDb.connectionDb() == null) {
             System.out.println("I entered the login view");
-            jpanelCentralLogin.jButton1.addActionListener(this);
             init();
             JOptionPane.showMessageDialog(jframeLogin, "Se produjo un error en la conexion con la base de datos", "Error de Conexion", JOptionPane.WARNING_MESSAGE);
             System.exit(0);

@@ -19,9 +19,8 @@ import javax.swing.JOptionPane;
  * @author Jesus Gutierrez
  */
 public class ControllerAdministrator extends ModelAdministrator implements ActionListener {
-    
-    
-    public ControllerAdministrator(JframeLogin jframeLogin , JpanelDarkUtil jpanelDarkUtil) {
+
+    public ControllerAdministrator(JframeLogin jframeLogin, JpanelDarkUtil jpanelDarkUtil) {
         this.jpanelDarkUtil = jpanelDarkUtil;
         this.jframeLogin = jframeLogin;
 
@@ -34,7 +33,9 @@ public class ControllerAdministrator extends ModelAdministrator implements Actio
             @Override
             public void mouseClicked(MouseEvent e) {
                 System.out.println("Se preciona");
-                updateComponent(jinternalJframeUser);
+                ControllerUser controllerUser = new ControllerUser(jinternalJframeUser , jdialogUser);
+                updateComponent(controllerUser.getInternalJframe());
+
             }
         });
         jframeLogin.jMenu2.addMouseListener(new MouseAdapter() {
@@ -87,22 +88,22 @@ public class ControllerAdministrator extends ModelAdministrator implements Actio
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource().equals(jinternalJframeUser.jButton3)) {
-            jdialogUser.setLocationRelativeTo(jframeLogin);
-            jdialogUser.setVisible(true);
-        }
-        if (e.getSource().equals(jinternalJframeClient.jButton3)) {
-            jdialogClient.setLocationRelativeTo(jframeLogin);
-            jdialogClient.setVisible(true);
-        }
-        if (e.getSource().equals(jinternalJframeProduct.jButton3)) {
-            jdialogProduct.setLocationRelativeTo(jframeLogin);
-            jdialogProduct.setVisible(true);
-        }
-        if (e.getSource().equals(jinternalJframeCategory.jButton3)) {
-            jdialogCategory.setLocationRelativeTo(jframeLogin);
-            jdialogCategory.setVisible(true);
-        }
+//        if (e.getSource().equals(jinternalJframeUser.jButton3)) {
+//            jdialogUser.setLocationRelativeTo(jframeLogin);
+//            jdialogUser.setVisible(true);
+//        }
+//        if (e.getSource().equals(jinternalJframeClient.jButton3)) {
+//            jdialogClient.setLocationRelativeTo(jframeLogin);
+//            jdialogClient.setVisible(true);
+//        }
+//        if (e.getSource().equals(jinternalJframeProduct.jButton3)) {
+//            jdialogProduct.setLocationRelativeTo(jframeLogin);
+//            jdialogProduct.setVisible(true);
+//        }
+//        if (e.getSource().equals(jinternalJframeCategory.jButton3)) {
+//            jdialogCategory.setLocationRelativeTo(jframeLogin);
+//            jdialogCategory.setVisible(true);
+//        }
     }
 
     private void updateComponent(JInternalFrame jInternalFrame) {

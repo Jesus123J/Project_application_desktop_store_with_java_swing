@@ -59,6 +59,9 @@ public class JpanelCentralLogin extends javax.swing.JPanel {
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("INICIAR SESIÓN");
 
+        jLabel4.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
         jtextfieldUtil1.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jpanelBodyRigth1Layout = new javax.swing.GroupLayout(jpanelBodyRigth1);

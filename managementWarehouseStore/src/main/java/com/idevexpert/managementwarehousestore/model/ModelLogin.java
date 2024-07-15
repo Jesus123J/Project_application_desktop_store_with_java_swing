@@ -6,6 +6,8 @@ package com.idevexpert.managementwarehousestore.model;
 
 import com.idevexpert.managementwarehousestore.controller.ControllerAdministrator;
 import com.idevexpert.managementwarehousestore.data.ConnectionDb;
+import com.idevexpert.managementwarehousestore.data.dao.UserDaoImpl;
+import com.idevexpert.managementwarehousestore.data.dao.daoImpl.UserDao;
 //import com.idevexpert.managementwarehousestore.data.dbQueries.LoginService;
 import com.idevexpert.managementwarehousestore.utils.JpanelDarkUtil;
 import com.idevexpert.managementwarehousestore.view.administrator.JpanelJdesktopBody;
@@ -15,11 +17,11 @@ import java.awt.Color;
 import java.awt.Insets;
 import java.sql.Connection;
 import javax.swing.JLayeredPane;
+import javax.swing.JOptionPane;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 import net.miginfocom.swing.MigLayout;
-
 
 public class ModelLogin {
 
@@ -27,7 +29,7 @@ public class ModelLogin {
     protected JpanelCentralLogin jpanelCentralLogin = new JpanelCentralLogin();
     protected JframeLogin jframeLogin = new JframeLogin();
     protected JpanelDarkUtil jpanelDarkUtil = new JpanelDarkUtil();
-    //private LoginService loginService = new LoginService(connectionDb.connectionDb());
+    private final UserDao userDao = new UserDaoImpl();
     private ControllerAdministrator controllerAdministrator;
     private final MigLayout layout = new MigLayout("fill, insets 0");
 
@@ -44,14 +46,22 @@ public class ModelLogin {
     }
 
     public void awaitComponentEnter() {
-//        if (loginService.incomeServiceLogIn() == 1) {
-//            jframeLogin.setEnabled(false);
-//            jpanelDarkUtil.setVisible(false);
-//            System.out.println("I entered the coordiantor view");
-//            controllerAdministrator = new ControllerAdministrator(jframeLogin ,  jpanelDarkUtil);
-//        } else {   
-//            jpanelCentralLogin.jLabel4.setText("Datos incorrectos inténtalo de nuevo");
-//        }
+        if (new String(jpanelCentralLogin.jPasswordField1.getPassword()).isBlank() || jpanelCentralLogin.jtextfieldUtil1.getText().isBlank()) {
+            JOptionPane.showMessageDialog(null, "llene los campus");
+            return;
+        }
+        try {
+            if (userDao.getByUsername(jpanelCentralLogin.jtextfieldUtil1.getText()).getPassword().equalsIgnoreCase(new String(jpanelCentralLogin.jPasswordField1.getPassword()))) {
+                jframeLogin.setEnabled(false);
+                jpanelDarkUtil.setVisible(false);
+                System.out.println("I entered the coordiantor view");
+                controllerAdministrator = new ControllerAdministrator(jframeLogin, jpanelDarkUtil);
+            } else {
+                jpanelCentralLogin.jLabel4.setText("Datos incorrectos inténtalo de nuevo");
+            }
+        } catch (Exception e) {
+            jpanelCentralLogin.jLabel4.setText("Datos incorrectos inténtalo de nuevo");
+        }
 
     }
 
