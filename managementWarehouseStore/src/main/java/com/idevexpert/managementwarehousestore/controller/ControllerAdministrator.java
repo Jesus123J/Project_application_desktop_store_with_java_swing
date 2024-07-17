@@ -7,6 +7,7 @@ package com.idevexpert.managementwarehousestore.controller;
 import com.idevexpert.managementwarehousestore.model.ModelAdministrator;
 import com.idevexpert.managementwarehousestore.utils.JpanelDarkUtil;
 import com.idevexpert.managementwarehousestore.view.login.JframeLogin;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -23,7 +24,7 @@ public class ControllerAdministrator extends ModelAdministrator implements Actio
     public ControllerAdministrator(JframeLogin jframeLogin, JpanelDarkUtil jpanelDarkUtil) {
         this.jpanelDarkUtil = jpanelDarkUtil;
         this.jframeLogin = jframeLogin;
-
+        this.jframeLogin.toFront();
         jinternalJframeClient.jButton3.addActionListener(this);
         jinternalJframeUser.jButton3.addActionListener(this);
         jinternalJframeCategory.jButton3.addActionListener(this);
@@ -33,7 +34,7 @@ public class ControllerAdministrator extends ModelAdministrator implements Actio
             @Override
             public void mouseClicked(MouseEvent e) {
                 System.out.println("Se preciona");
-                ControllerUser controllerUser = new ControllerUser(jinternalJframeUser , jdialogUser);
+                ControllerUser controllerUser = new ControllerUser(jinternalJframeUser, jdialogUser);
                 updateComponent(controllerUser.getInternalJframe());
 
             }
@@ -41,29 +42,29 @@ public class ControllerAdministrator extends ModelAdministrator implements Actio
         jframeLogin.jMenu2.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                ControllerProduct controllerProduct = new ControllerProduct(jinternalJframeProduct,jdialogProduct);
+                ControllerProduct controllerProduct = new ControllerProduct(jinternalJframeProduct, jdialogProduct);
                 updateComponent(controllerProduct.getJinternalJframeProduct());
             }
         });
         jframeLogin.jMenu3.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                ControllerClient controllerClient  = new ControllerClient(jinternalJframeClient , jdialogClient);
+                ControllerClient controllerClient = new ControllerClient(jinternalJframeClient, jdialogClient);
                 updateComponent(controllerClient.getJinternalJframeClient());
             }
         });
         jframeLogin.jMenu4.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                ControllerCategory controllerCategory = new ControllerCategory(jinternalJframeCategory , jdialogCategory);
+                ControllerCategory controllerCategory = new ControllerCategory(jinternalJframeCategory, jdialogCategory);
                 updateComponent(controllerCategory.getJinternalJframeCategoria());
             }
         });
         jframeLogin.jMenu5.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                
-                updateComponent(jinternalJframeBill);
+                ControllerFactura controllerFactura = new ControllerFactura(jinternalJframeBill, jframeLogin , jpanelDarkUtil);
+                updateComponent(controllerFactura.getIternalFactura());
             }
         });
         jframeLogin.jMenu6.addMouseListener(new MouseAdapter() {
@@ -110,14 +111,21 @@ public class ControllerAdministrator extends ModelAdministrator implements Actio
 //        }
     }
 
-    private void updateComponent(JInternalFrame jInternalFrame) {
+    private void updateComponent(JInternalFrame internalFrame) {
         System.out.println("Se actuliza component");
-        jpanelJdesktopBody.jDesktopPane1.removeAll();
-        jpanelJdesktopBody.jDesktopPane1.add(jInternalFrame);
-        jpanelJdesktopBody.jDesktopPane1.revalidate();
-        jpanelJdesktopBody.jDesktopPane1.repaint();
-        System.out.println("Se inserto Component");
-        jInternalFrame.setVisible(true);
+
+        int x = (jpanelJdesktopBody.jDesktopPane1.getWidth() / 2) - internalFrame.getWidth() / 2;
+        int y = (jpanelJdesktopBody.jDesktopPane1.getHeight() / 2) - internalFrame.getHeight() / 2;
+
+        if (internalFrame.isShowing()) {
+            internalFrame.setLocation(x, y);
+        } else {
+            jpanelJdesktopBody.jDesktopPane1.add(internalFrame);
+            internalFrame.setLocation(x, y);
+            internalFrame.show();
+            internalFrame.setVisible(true);
+            internalFrame.toFront();
+        }
     }
 
 }

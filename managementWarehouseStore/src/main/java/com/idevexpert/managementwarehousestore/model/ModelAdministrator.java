@@ -10,13 +10,11 @@ import com.idevexpert.managementwarehousestore.view.administrator.JinternalJfram
 import com.idevexpert.managementwarehousestore.view.administrator.JinternalJframeClient;
 import com.idevexpert.managementwarehousestore.view.administrator.JinternalJframeHistory;
 import com.idevexpert.managementwarehousestore.view.administrator.JinternalJframeProduct;
-import com.idevexpert.managementwarehousestore.view.administrator.JinternalJframeReport;
 import com.idevexpert.managementwarehousestore.view.administrator.JinternalJframeUser;
 import com.idevexpert.managementwarehousestore.view.administrator.JpanelJdesktopBody;
 import com.idevexpert.managementwarehousestore.view.administrator.componentJdialog.JdialogCategory;
 import com.idevexpert.managementwarehousestore.view.administrator.componentJdialog.JdialogClient;
 import com.idevexpert.managementwarehousestore.view.administrator.componentJdialog.JdialogProduct;
-import com.idevexpert.managementwarehousestore.view.administrator.componentJdialog.JdialogReport;
 import com.idevexpert.managementwarehousestore.view.administrator.componentJdialog.JdialogUser;
 import com.idevexpert.managementwarehousestore.view.login.JframeLogin;
 import java.awt.Color;
@@ -29,7 +27,6 @@ import net.miginfocom.swing.MigLayout;
  */
 public  class ModelAdministrator {
 
-    protected JinternalJframeReport jinternalJframeReports = new JinternalJframeReport();
     protected JinternalJframeBill jinternalJframeBill = new JinternalJframeBill();
     protected JinternalJframeClient jinternalJframeClient = new JinternalJframeClient();
     protected JinternalJframeCategory jinternalJframeCategory = new JinternalJframeCategory();
@@ -43,7 +40,6 @@ public  class ModelAdministrator {
     protected JdialogCategory jdialogCategory;
     protected JdialogClient jdialogClient;
     protected JdialogProduct jdialogProduct;
-    protected JdialogReport jdialogReport;
 
     protected JframeLogin jframeLogin;
     private MigLayout migLayout;
@@ -53,7 +49,6 @@ public  class ModelAdministrator {
         jdialogClient = new JdialogClient(jframeLogin, true);
         jdialogProduct = new JdialogProduct(jframeLogin, true);
         jdialogUser = new JdialogUser(jframeLogin, true);
-        jdialogReport = new JdialogReport(jframeLogin, true);
         
         migLayout = new MigLayout("fill, insets 0");
         jframeLogin.jLayeredPane1.setLayer(jpanelJdesktopBody, JLayeredPane.DEFAULT_LAYER);

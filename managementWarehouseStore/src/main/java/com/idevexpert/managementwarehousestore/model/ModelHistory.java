@@ -8,6 +8,6 @@ package com.idevexpert.managementwarehousestore.model;
  *
  * @author Jesus Gutierrez
  */
-public class ModelReport {
+public class ModelHistory extends ModelAdministrator {
     
 }

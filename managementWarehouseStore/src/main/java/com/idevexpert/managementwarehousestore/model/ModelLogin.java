@@ -8,6 +8,7 @@ import com.idevexpert.managementwarehousestore.controller.ControllerAdministrato
 import com.idevexpert.managementwarehousestore.data.ConnectionDb;
 import com.idevexpert.managementwarehousestore.data.dao.UserDaoImpl;
 import com.idevexpert.managementwarehousestore.data.dao.daoImpl.UserDao;
+import com.idevexpert.managementwarehousestore.utils.JframeLoading;
 //import com.idevexpert.managementwarehousestore.data.dbQueries.LoginService;
 import com.idevexpert.managementwarehousestore.utils.JpanelDarkUtil;
 import com.idevexpert.managementwarehousestore.view.administrator.JpanelJdesktopBody;
@@ -18,6 +19,7 @@ import java.awt.Insets;
 import java.sql.Connection;
 import javax.swing.JLayeredPane;
 import javax.swing.JOptionPane;
+import javax.swing.SwingWorker;
 import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
@@ -44,25 +46,32 @@ public class ModelLogin {
         jframeLogin.setLocationRelativeTo(null);
         jframeLogin.setVisible(true);
     }
+    JframeLoading jframeLoading = new JframeLoading();
 
     public void awaitComponentEnter() {
-        if (new String(jpanelCentralLogin.jPasswordField1.getPassword()).isBlank() || jpanelCentralLogin.jtextfieldUtil1.getText().isBlank()) {
-            JOptionPane.showMessageDialog(null, "llene los campus");
-            return;
-        }
-        try {
-            if (userDao.getByUsername(jpanelCentralLogin.jtextfieldUtil1.getText()).getPassword().equalsIgnoreCase(new String(jpanelCentralLogin.jPasswordField1.getPassword()))) {
-                jframeLogin.setEnabled(false);
-                jpanelDarkUtil.setVisible(false);
-                System.out.println("I entered the coordiantor view");
-                controllerAdministrator = new ControllerAdministrator(jframeLogin, jpanelDarkUtil);
-            } else {
+        jframeLoading.setVisible(true);
+        
+        new Thread(() -> {
+            if (new String(jpanelCentralLogin.jPasswordField1.getPassword()).isBlank() || jpanelCentralLogin.jtextfieldUtil1.getText().isBlank()) {
+                jframeLoading.setVisible(false);
+                JOptionPane.showMessageDialog(null, "llene los campus");
+                return;
+            }
+            try {
+                if (userDao.getByUsername(jpanelCentralLogin.jtextfieldUtil1.getText()).getPassword().equalsIgnoreCase(new String(jpanelCentralLogin.jPasswordField1.getPassword()))) {
+                    jframeLogin.setEnabled(false);
+                    jpanelDarkUtil.setVisible(false);
+                    System.out.println("I entered the coordiantor view");
+                    jframeLoading.setVisible(false);
+                    controllerAdministrator = new ControllerAdministrator(jframeLogin, jpanelDarkUtil);
+                } else {
+                    jframeLoading.setVisible(false);
+                    jpanelCentralLogin.jLabel4.setText("Datos incorrectos inténtalo de nuevo");
+                }
+            } catch (Exception e) {
+                jframeLoading.setVisible(false);
                 jpanelCentralLogin.jLabel4.setText("Datos incorrectos inténtalo de nuevo");
             }
-        } catch (Exception e) {
-            jpanelCentralLogin.jLabel4.setText("Datos incorrectos inténtalo de nuevo");
-        }
-
+        }).start();
     }
-
 }

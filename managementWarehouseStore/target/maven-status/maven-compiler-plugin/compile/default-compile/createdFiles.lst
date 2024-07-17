@@ -7,13 +7,16 @@ Thiago\datetime\component\date\ButtonMonthYear.class
 Thiago\datetime\component\date\PanelDateOption.class
 com\idevexpert\managementwarehousestore\view\login\component\JpanelBodyLeft.class
 com\idevexpert\managementwarehousestore\controller\ControllerReport.class
+com\idevexpert\managementwarehousestore\strategy\DiscountPricingStrategy.class
 com\idevexpert\managementwarehousestore\controller\ControllerCategory.class
 Thiago\datetime\component\date\DateSelectionListener.class
 com\idevexpert\managementwarehousestore\controller\ControllerAdministrator$8.class
 com\idevexpert\managementwarehousestore\data\dao\PersonDaoImpl.class
 com\idevexpert\managementwarehousestore\data\dto\FacturaDto.class
 com\idevexpert\managementwarehousestore\data\dao\daoImpl\ProductDao.class
+com\idevexpert\managementwarehousestore\strategy\PricingStrategy.class
 Thiago\datetime\component\date\PanelMonth.class
+com\idevexpert\managementwarehousestore\utils\JframeLoading$2.class
 com\idevexpert\managementwarehousestore\model\ModelReport.class
 Thiago\datetime\component\time\Header$EventHeaderChanged.class
 com\idevexpert\managementwarehousestore\model\ModelAdministrator.class
@@ -86,6 +89,7 @@ Thiago\datetime\component\time\PanelClock$1.class
 com\idevexpert\managementwarehousestore\data\ConnectionDataBase.class
 com\idevexpert\managementwarehousestore\data\dao\daoImpl\UserDao.class
 Thiago\swing\slider\SimpleTransition$SliderType.class
+com\idevexpert\managementwarehousestore\utils\JframeLoading.class
 Thiago\datetime\component\date\Header$EventHeaderChanged.class
 com\idevexpert\managementwarehousestore\controller\ControllerAdministrator$1.class
 com\idevexpert\managementwarehousestore\view\administrator\componentJdialog\JdialogUser$1.class
@@ -102,6 +106,7 @@ com\idevexpert\managementwarehousestore\data\dao\FacturaDaoImpl.class
 com\idevexpert\managementwarehousestore\view\administrator\JinternalJframeClient.class
 Thiago\datetime\component\time\PanelClock$EventClockChanged.class
 com\idevexpert\managementwarehousestore\controller\ControllerClient.class
+com\idevexpert\managementwarehousestore\utils\JframeLoading$1.class
 Thiago\datetime\util\InputUtils.class
 com\idevexpert\managementwarehousestore\controller\ControllerAdministrator$5.class
 Thiago\datetime\component\date\ButtonMonthYear$1.class
