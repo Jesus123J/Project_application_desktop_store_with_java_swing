@@ -5,8 +5,10 @@
 package com.idevexpert.managementwarehousestore.controller;
 
 import com.idevexpert.managementwarehousestore.model.ModelHistory;
+import com.idevexpert.managementwarehousestore.view.administrator.JinternalJframeHistory;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JInternalFrame;
 
 /**
  *
@@ -14,9 +16,25 @@ import java.awt.event.ActionListener;
  */
 public class ControllerHistory extends ModelHistory implements ActionListener{
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    
+    public ControllerHistory(JinternalJframeHistory jinternalJframeHistory){
+        this.jinternalJframeHistory = jinternalJframeHistory;
+        init();   
     }
     
+    
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource().equals(this.jinternalJframeHistory.jButton1)){
+            if(this.jinternalJframeHistory.jFormattedTextField1.getFormatter() == null){
+                return;
+            }
+            getInternalHistory();
+        }
+    }
+
+    JInternalFrame getInternalHistory() {
+        return this.jinternalJframeHistory;
+    }
+ 
 }

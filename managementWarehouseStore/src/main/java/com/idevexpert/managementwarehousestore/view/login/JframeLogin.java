@@ -36,7 +36,6 @@ public class JframeLogin extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
         jMenu7 = new javax.swing.JMenu();
         jMenu8 = new javax.swing.JMenu();
 
@@ -81,11 +80,6 @@ public class JframeLogin extends javax.swing.JFrame {
         jMenu5.setText("Facturar");
         jMenuBar1.add(jMenu5);
 
-        jMenu6.setForeground(new java.awt.Color(0, 0, 0));
-        jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reporte.png"))); // NOI18N
-        jMenu6.setText("Reportes");
-        jMenuBar1.add(jMenu6);
-
         jMenu7.setForeground(new java.awt.Color(0, 0, 0));
         jMenu7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/historial.png"))); // NOI18N
         jMenu7.setText("Historial");
@@ -123,7 +117,6 @@ public class JframeLogin extends javax.swing.JFrame {
     public javax.swing.JMenu jMenu3;
     public javax.swing.JMenu jMenu4;
     public javax.swing.JMenu jMenu5;
-    public javax.swing.JMenu jMenu6;
     public javax.swing.JMenu jMenu7;
     public javax.swing.JMenu jMenu8;
     public javax.swing.JMenuBar jMenuBar1;

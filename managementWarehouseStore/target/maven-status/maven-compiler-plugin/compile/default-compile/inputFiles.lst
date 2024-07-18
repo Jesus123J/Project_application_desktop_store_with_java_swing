@@ -8,10 +8,8 @@ C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_w
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\Thiago\datetime\component\time\AnimationChange.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\controller\ControllerHistory.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\view\login\component\JpanelBodyRigth.java
-C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\view\administrator\componentJdialog\JdialogReport.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\Thiago\datetime\util\InputUtils.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\view\login\component\JpanelBodyLeft.java
-C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\model\ModelReport.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\controller\ControllerFactura.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\data\ConnectionDataBase.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\view\administrator\JClassJdesktopBody.java
@@ -25,7 +23,6 @@ C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_w
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\data\dao\daoImpl\CategoriaDao.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\data\dto\ProductDto.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\view\administrator\componentJdialog\JdialogProduct.java
-C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\controller\ControllerReport.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\data\dto\ClientDto.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\Thiago\datetime\component\date\DatePicker.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\Thiago\datetime\component\time\Header.java
@@ -41,7 +38,6 @@ C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_w
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\data\dto\FacturaDto.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\model\ModelProduct.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\strategy\PricingStrategy.java
-C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\view\administrator\JinternalJframeReport.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\Thiago\datetime\component\date\DateEvent.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\view\login\component\JpanelCentralLogin.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\Thiago\datetime\component\date\PanelDate.java
@@ -60,6 +56,7 @@ C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_w
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\Thiago\datetime\component\time\PanelClock.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\view\login\JframeLogin.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\view\administrator\JinternalJframeCategory.java
+C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\model\ModelHistory.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\view\administrator\JinternalJframeProduct.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\Thiago\datetime\component\date\DateSelectionAble.java
 C:\Users\Jesus Gutierrez\Documents\WorkSpace\Project_application_desktop_store_with_java_swing\managementWarehouseStore\src\main\java\com\idevexpert\managementwarehousestore\data\dao\daoImpl\PersonDao.java

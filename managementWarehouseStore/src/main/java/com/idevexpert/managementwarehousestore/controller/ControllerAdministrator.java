@@ -67,16 +67,12 @@ public class ControllerAdministrator extends ModelAdministrator implements Actio
                 updateComponent(controllerFactura.getIternalFactura());
             }
         });
-        jframeLogin.jMenu6.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                updateComponent(jinternalJframeReports);
-            }
-        });
+       
         jframeLogin.jMenu7.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                updateComponent(jinternalJframeHistory);
+                ControllerHistory controllerHistory = new ControllerHistory(jinternalJframeHistory);
+                updateComponent(controllerHistory.getInternalHistory());
             }
         });
         jframeLogin.jMenu8.addMouseListener(new MouseAdapter() {

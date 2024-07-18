@@ -179,10 +179,14 @@ public class ModelBill extends ModelAdministrator {
 
         if (cantidadCount == 0) {
             JOptionPane.showMessageDialog(null, "No hay datos que se an guardado");
+            this.jframeLogin.setEnabled(true);
+            jframeLoading.setVisible(false);
             return;
         }
 
         if (JOptionPane.showConfirmDialog(null, "Una vez se muestre presivisualisacion del recivo se guardara el product\ny se guardara en la base de datos ya no podra eliminar\nDesea continuar ??") != 0) {
+            this.jframeLogin.setEnabled(true);
+            jframeLoading.setVisible(false);
             return;
         }
         FacturaDaoImpl facturaDaoImpl = new FacturaDaoImpl();

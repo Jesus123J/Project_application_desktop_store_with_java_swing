@@ -22,7 +22,7 @@ import javax.swing.JOptionPane;
 
 public class FacturaDaoImpl implements ConnectionDataBase {
     
-    public List<FacturaDto> getAllFacturas() throws SQLException {
+    public static List<FacturaDto> getAllFacturas() throws SQLException {
         String query = "SELECT * FROM factura";
         List<FacturaDto> facturas = new ArrayList<>();
         try (Statement stmt = connection.createStatement(); ResultSet rs = stmt.executeQuery(query)) {
@@ -40,7 +40,7 @@ public class FacturaDaoImpl implements ConnectionDataBase {
         return facturas;
     }
 
-    public List<FacturaDto> getFacturasByDate(String date) throws SQLException {
+    public static List<FacturaDto> getFacturasByDate(String date) throws SQLException {
         String query = "SELECT * FROM factura WHERE date = ?";
         List<FacturaDto> facturas = new ArrayList<>();
         try (PreparedStatement pstmt = connection.prepareStatement(query)) {
